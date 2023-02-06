@@ -2,7 +2,7 @@
 
 #https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami
 
-data "aws_ami" "amzlinux2" {
+data "aws_ami" "ubuntu" {
   most_recent = true       #most recent AMI if there are multiple ami available
   owners      = ["amazon"] #amazon owners
   filter {
