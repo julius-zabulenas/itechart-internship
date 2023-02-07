@@ -1,7 +1,7 @@
 #! /bin/bash
 # Instance Identity Metadata Reference - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-identity-documents.html
-sudo yum update -y
-sudo yum install -y nginx #nginx server web
+sudo apt update -y
+sudo apt install -y nginx #nginx server web
 sudo systemctl enable nginx
 sudo service nginx start  
 sudo echo '<h1>Welcome to my page  - APP-1</h1>' | sudo tee /var/www/html/index.html #update with text
