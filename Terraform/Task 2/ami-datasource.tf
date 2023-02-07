@@ -4,7 +4,7 @@ data "aws_ami" "amzlinux2" {
   owners           = ["amazon"] #amazon owners
   filter {
     name   = "name"
-    values = ["amzn2-ami-hvm-*-gp2"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
   }
   filter {
     name   = "root-device-type"
